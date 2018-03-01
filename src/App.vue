@@ -4,7 +4,7 @@
         <hr>
         <div class="row">
             <app-servers></app-servers>
-            <app-servers-details :resetFn="resetToNormal"></app-servers-details>
+            <app-servers-details></app-servers-details>
         </div>
         <hr>
         <app-footer></app-footer>

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import {serverBus} from '../../main'
+import { serverBus } from '../../main'
 export default {
   props: ['server'],
   methods: {

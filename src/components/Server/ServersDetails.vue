@@ -2,7 +2,7 @@
     <div class="col-xs-12 col-sm-6">
         <div v-if="server">
             <p> Server #{{server.id}} - Status: {{server.status}}</p>
-            <button @click="resetFn(server)">Set to Normal</button>
+            <button @click="resetFn">Set to Normal</button>
         </div>
         <p v-else>Server Details are currently not updated</p>
     </div>
@@ -21,9 +21,8 @@ export default {
        });
     },
     methods: {
-        resetFn(server) {
+        resetFn() {
             this.server.status = 'Normal';
-            serverBus.resetToNormal(server);
         }
     }
 }
