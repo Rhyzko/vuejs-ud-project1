@@ -4,7 +4,7 @@
         <hr>
         <div class="row">
             <app-servers></app-servers>
-            <app-servers-details></app-servers-details>
+            <app-servers-details :resetFn="resetToNormal"></app-servers-details>
         </div>
         <hr>
         <app-footer></app-footer>
@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import Header from './Header.vue';
-import Footer from './Footer.vue';
-import Servers from './Servers.vue';
-import ServersDetails from './ServersDetails.vue'
+import Header from './components/Shared/Header.vue';
+import Footer from './components/Shared/Footer.vue';
+import Servers from './components/Server/Servers.vue';
+import ServersDetails from './components/Server/ServersDetails.vue'
 export default {
   components: {
       'app-header': Header,
